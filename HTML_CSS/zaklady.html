@@ -1,0 +1,298 @@
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- kompatibilita posledního prohlížeče -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Petr Pospíšil" />
+    <meta name="description" content="Přehled HTML tagů" />
+
+    <title>HTML tagy</title>
+
+</head>
+
+
+<body>
+
+
+    <section>
+        <svg width="200px" height="200px" style="border: 1px solid #444">
+
+            <rect width=150px height=100px fill="black" stroke="red" stroke-width=10px x="20" y="30"></rect>
+            <circle r=50 cx="100" cy="100" fill="silver" stroke="red" stroke-width=10px></circle>
+
+        </svg>
+    </section>
+
+
+    <section>
+        <h4>Obrazek</h4>
+        <figure>
+            <img src="https://source.unsplash.com/x_5ofu-xTXM/" alt="circles" width="400px" height="200px"
+                title="Popis obrázku">
+
+            <figcaption>Popis obrázku</figcaption>
+        </figure>
+    </section>
+
+
+    <section>
+        <h4>Picture</h4>
+        <picture>
+            <source media="(min-width:800px)" srcset="https://source.unsplash.com/x_5ofu-xTXM/1000x400">
+            <source media="(min-width:600px)" srcset="https://source.unsplash.com/uz8-jbwJeC4/600x400">
+            <img src="https://source.unsplash.com/SsfIl_7dU4U/400x400" alt="Popis obrázku">
+        </picture>
+
+
+    </section>
+
+
+    <!-- <section>
+        <h4>Youtube video</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tRvmyNt09n8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OEV8gMkCHXQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+    </section> -->
+
+
+    <main>
+        <section class="links">
+            <h4>Odkazy a tlačítka</h4>
+            <article>
+                <section>
+                    <h5>Odkazy</h5>
+                    <ul>
+                        <li><a href="seznam.cz" class="primary"></a>Primarni odkaz</li>
+                        <li><a href="#" class="secondary">Sekundární odkaz</a></li>
+                        <li><a href="#" class="contrast">Kontrastni odkaz</a></li>
+                    </ul>
+                </section>
+            </article>
+        </section>
+
+        <section>
+            <h4>Tlacitka</h4>
+            <div>
+                <button onclick="wndow.location.href='https://www.seznam.cz/;'">Primární</button>
+                <a href="https://www.seznam.cz/" target="_blank">
+                    <input type="button" value="Primární" width="100px" height="80px">
+                </a>
+
+                <input type="button" value="Sekundární" class="secondary" width="100px" height="80px">
+                <input type="button" value="Kontrastni" class="contrast" width="100px" height="80px">
+            </div>
+
+            <div>
+                <input type="button" value="Primární outline" width="100px" height="80px">
+                <input type="button" value="Sekundární outline" class="secondary" width="100px" height="80px">
+                <input type="button" value="Kontrastni outline" class="contrast" width="100px" height="80px">
+            </div>
+        </section>
+    </main>
+
+
+    <main>
+        <section class="forms">
+            <h4>Formuláře</h4>
+            <section>
+                <article>
+                    <h5>Formulář pro odběr novinek</h5>
+                    <form action="GET">
+                        <input type="text" name="text" placeholder="Křestní jméno" required id="">
+                        <input type="email" name="email" placeholder="email" required id="">
+                        <label for="checkbox">Souhlasím</label>
+                        <input type="checkbox" name="checkbox" checked id="checkbox">
+                        <input type="submit" id="submit" value="Odebírat">
+                    </form>
+                </article>
+            </section>
+
+            <section>
+                <h4>Checkboxy</h4>
+                <fieldset>
+                    <legend>Zaškrtávací políčka</legend>
+                    <label for="chck1">Položka 1</label>
+                    <input type="checkbox" name="checkbox1" id="checkbox">
+                    <label for="chck2">Položka 2</label>
+                    <input type="checkbox" name="checkbox2" id="checkbox">
+                </fieldset>
+
+
+            </section>
+
+        </section>
+    </main>
+
+
+    <fieldset>
+        <legend>Přepínací tlačítka</legend>
+        <label for="radio-1">Souhlasím</label>
+        <input type="radio" name="radio" value="" id="radio-1">
+        <label for="radio-1">Nesouhlasím</label>
+        <input type="radio" name="radio" value="" id="radio-2">
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Switches</legend>
+        <label for="switch-1">Switch</label>
+        <input type="checkbox" name="radio" value="" id="switch-1" role="switch">
+        <label for="switch-1">Switch</label>
+        <input type="checkbox" name="radio" value="" id="switch-2" role="switch">
+    </fieldset>
+
+
+    <section>
+        <h4>Výběr</h4>
+        <label for="zvirata">Vyberte zvířátko:</label>
+        <select name="zvirata" id="mazlicci">
+            <option value="Pes">Pes</option>
+            <option value="Kočka">Kočka</option>
+            <option value="Křeček" selected>Křeček</option>
+            <option value="Papoušek">Papoušek</option>
+            <option value="Želva">Želva</option>
+            <option value="Rybičky">Rybičky</option>
+        </select>
+    </section>
+
+
+    <section>
+        <label for="food">Oblíbené jídlo:</label>
+        <select name="food" id="food" multiple size="4">
+            <optgroup label="Omáčky">
+                <option value="Svíčková">Svíčková</option>
+                <option value="Koprovka">Koprovka</option>
+                <option value="Zelí" disabled>Zelí</option>
+            </optgroup>
+            <optgroup label="Smažené">
+                <option value="Řízek">Řízek asdgas</option>
+                <option value="Smažák">Smažák asdga</option>
+            </optgroup>
+        </select>
+    </section>
+
+
+    <section>
+        <label for="zelenina">Vyberte zeleninu:</label>
+        <input type="text" name="zelenina" id="zelenina" list="seznam-zeleniny">
+        <datalist id="seznam-zeleniny">
+            <option value="mrkev">Mrkev je dobrá</option>
+            <option value="cibule">cibule</option>
+            <option value="petržel">petržel</option>
+        </datalist>
+    </section>
+
+
+    <section>
+        <h4>MIX prvků</h4>
+
+        <label for="txtarea">Textové pole:</label>
+        <textarea rows="3" cols="30" name="txtarea">Předvyplněný text</textarea>
+        <hr />
+
+        <label for="text">Text</label>
+        <input type="text" name="text" id="" placeholder="Text" />
+        <hr />
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="pass" placeholder="heslo" />
+        <hr />
+
+        <label for="hledani">Hledat</label>
+        <input type="text" name="hledani" id="search" placeholder="Hledat" />
+        <hr />
+
+        <input type="email" name="hledani" id="email" placeholder="Email" />
+        <label for="email">Napiš mi</label>
+        <hr />
+
+    </section>
+
+
+    <section>
+        <label for="Datum">Datum</label>
+        <input type="date" name="Datum" id="date" />
+        <hr />
+
+        <label for="time">Čas</label>
+        <input type="time" name="Čas" id="time" />
+        <hr />
+
+        <label for="time">Barva</label>
+        <input type="color" name="Barva" id="color" value="#f6b73c" />
+        <hr />
+
+        <label for="Soubory">Soubory</label>
+        <input type="file" name="Soubory" id="file" />
+        <hr />
+
+        <label for="range">Posuvník rozsahu</label>
+        <input type="range" name="Posuvník rozsahu" id="range" min="0" max="100" value="90" />
+        <hr />
+
+    </section>
+
+
+    <section id="rest">
+        <h4>Ostatni</h4>
+        <article>
+            <section class="accordions">
+                <h3>Accordions</h3>
+                <details>
+                    <summary>A1</summary>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat assumenda ullam optio omnis,
+                        unde magni. Labore, esse. Voluptatem odit quasi nobis eum soluta in magni! Earum asperiores vel
+                        fuga impedit ipsa, recusandae, doloremque quaerat provident quisquam dolores delectus. Beatae
+                        quis amet incidunt recusandae dolores cupiditate, expedita dolore quasi sint dignissimos.</p>
+                </details>
+                <details>
+                    <summary>A2</summary>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, minus!</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, commodi?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, impedit.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, unde.</li>
+                    </ul>
+                </details>
+
+            </section>
+        </article>
+
+        <section>
+            <h4>Progress bar</h4>
+            <label>Zaplnění disku: <progress max="100" value="25"></progress>
+            </label>
+            <label>Nahrávání souboru: <progress></progress></label>
+
+        </section>
+
+
+
+    </section>
+
+    <section>
+        <h4>Meter</h4>
+
+        <label for="">Znečištění ovzduší:
+            <meter value="30" low="30" high="50" optimum="10" max="100">
+        </label>
+    </section>
+
+
+
+
+
+
+
+    <footer>Sestaveno &copy; Petr Pospíšil rok 2023</footer>
+
+</body>
+
+</html>
