@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+}
+
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    font-style: oblique;
+    color: rgb(#bbc6ce);
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.wrap {
+    width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    width: 980px;
+    height: 140px;
+    background-color: lightgreen;
+    margin-bottom: 15px;
+    border: 1px solid black;
+
+}
+
+aside {
+    width: 270px;
+    height: 450px;
+    background-color: lightgreen;
+    float: left;
+    left: 0;
+
+    border: 1px solid black;
+}
+
+main {
+    width: 690px;
+    height: 450px;
+    margin-left: 290px;
+    background-color: lightgreen;
+    border: 1px solid black;
+
+}
+
+footer {
+    margin-top: 15px;
+    height: 70px;
+    background-color: lightgreen;
+    border: 1px solid black;
+}

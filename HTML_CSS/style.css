@@ -42,5 +42,44 @@ select {
 
 
 #table {
-    background-image: url("https://source.unsplash.com/b0EzyHcXmsl");
+    background-image: url("https://source.unsplash.com/b0EzyHcXmsI");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+#table table,
+td,
+th,
+thead {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1.5rem;
+}
+
+
+p {
+    margin: 1rem;
+    /* top-bottom left-right */
+    /* top right bottom left */
+    padding: 0 2rem;
 }
