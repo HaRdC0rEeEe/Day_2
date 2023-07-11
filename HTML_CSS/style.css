@@ -3,7 +3,8 @@
     --hlavni_barva: hsla(0, 59%, 41%, 0.4);
     --barva_1: hsla(0, 59%, 41%, 0.6);
     --barva_2: hsl(0, 59%, 41%);
-    --hlavni_bg_barva: hsl(120, 50%, 50%);
+    --barva-light: rgb(255, 255, 255);
+    --hlavni_bg_barva: hsl(120, 50%, 80%);
     --bg_1: hsl(180, 50%, 80%);
     --bg_2: hsl(60, 50%, 80%);
 }
@@ -22,4 +23,63 @@ textarea,
 button,
 select {
     font-family: inherit;
+}
+
+
+#typography {
+    background-color: var(--hlavni_bg_barva);
+}
+
+
+#lists {
+    background-color: var(--bg_1);
+}
+
+
+#forms {
+    background-color: var(--bg_2);
+}
+
+
+#table {
+    background-image: url("https://source.unsplash.com/b0EzyHcXmsI");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+#table table,
+td,
+th,
+thead {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1.5rem;
+}
+
+
+p {
+    margin: 1rem;
+    /* top-bottom left-right */
+    /* top right bottom left */
+    padding: 0 2rem;
 }
